@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Drawing</title>
+    <style>
+        /* Simple styling to make buttons look decent */
+        .controls { margin-bottom: 10px; }
+        button { padding: 5px 15px; cursor: pointer; }
+    </style>
 </head>
 <body>
 <h1>Drawing Canvas Object Oriented</h1>
+
+<div class="controls">
+    <button id="btnUndo">Undo</button>
+    <button id="btnRedo">Redo</button>
+</div>
+
 <canvas id="canvas"
         width="600"
         height="400"
-        style="border:1px solid #d3d3d3;">
-
+        style="border:1px solid #d3d3d3; cursor: crosshair;">
 </canvas>
+
 <script src="draw.js"></script>
 </body>
 </html>
